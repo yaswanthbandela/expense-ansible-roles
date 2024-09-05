@@ -1,0 +1,13 @@
+- name: Configure db server
+  hosts: db
+  become: yes
+  vars:
+    login_host: db.byklabs.store
+  vars_prompt:
+  - name: mysql_root_password
+    prompt: enter mysql root password
+    private: no  
+  roles:
+  - db
+
+  
