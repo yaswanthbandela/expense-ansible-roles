@@ -1,1 +1,3 @@
 backend_api_url: backend.byklabs.store
+app_location: /usr/share/nginx/html
+component: frontend
